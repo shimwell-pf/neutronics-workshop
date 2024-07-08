@@ -37,13 +37,6 @@ sudo apt-get install -y libgles2-mesa-dev
 # install conda, creates new python enviroment and activates it
 cd ~
 
-wget -O Miniforge3.sh "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$(uname)-$(uname -m).sh"
-bash Miniforge3.sh -b -p "${HOME}/conda"
-source "${HOME}/conda/etc/profile.d/conda.sh"
-source "${HOME}/conda/etc/profile.d/mamba.sh"
-mamba create --name openmc-dagmc python=3.10
-mamba activate openmc-dagmc
-
 # install python dependancies
 mamba install -y -c conda-forge numpy cython
 
