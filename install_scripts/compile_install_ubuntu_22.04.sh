@@ -9,7 +9,7 @@ sudo apt-get --yes upgrade
 
 
 # install dependancies
-sudo apt-get install libglfw3
+sudo apt-get install -y libglfw3
 sudo apt-get install -y libglfw3-dev
 sudo apt-get install -y libopenblas-dev
 sudo apt-get install -y libpng-dev
