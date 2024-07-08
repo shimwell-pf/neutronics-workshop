@@ -113,7 +113,7 @@ mkdir build
 cd build
 # compile without dagmc
 # cmake ..
-cmake -DOPENMC_USE_DAGMC=ON -DDAGMC_ROOT=$HOME/DAGMC -DHDF5_PREFER_PARALLEL=off .. 
+cmake -DOPENMC_USE_DAGMC=ON -DDAGMC_ROOT=$HOME/DAGMC -DHDF5_PREFER_PARALLEL=off -DOPENMC_USE_MPI=ON -DHDF5_PREFER_PARALLEL=ON -DCMAKE_CXX_COMPILER=mpicxx -DCMAKE_C_COMPILER=mpicc .. 
 make -j
 make -j install
 cd ..
